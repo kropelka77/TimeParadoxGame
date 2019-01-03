@@ -1,0 +1,156 @@
+/*BOARD*/
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/*GRID*/
+.row {
+  display: flex;
+}
+
+.grid {
+  border: 5px solid #234E6F;
+  border-radius: 5px;
+}
+
+.cell {
+  display: flex;
+  outline: none;
+  user-select: none;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  background: #cad1d6;
+  border: 2px solid #234E6F;
+  box-sizing: border-box;
+}
+
+/*LABELS*/
+.labElement {
+  height: 45px;
+  width: 45px;
+  font-size: 2.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.labelH {
+  display: flex;
+  margin-left: 40px;
+  justify-content: center;
+  flex-basis: 100%;
+  margin-bottom: -10px;
+}
+
+.labelV {
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.labelV .labElement {
+  display: flex;
+  align-items: center;
+}
+
+/*DESCRIPTION*/
+.description {
+  margin-top: 1em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.description p {
+  margin: 0.5em;
+}
+
+/*WIN*/
+.win {
+  padding: 1.5em 3.5em;
+  position: absolute;
+  background: rgba(12, 28, 44, 0.9);
+  margin: 5em auto;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #0a1927;
+  z-index: 11;
+}
+
+.win p {
+  font-size: 2.2em;
+  margin: 20px;;
+}
+
+/*BUTTON*/
+.btn {
+  font-size: 1.7em;
+  margin: 20px;
+  margin-top: 10px;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid #152e47;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  background: linear-gradient(#234E6F, #152e47);
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  color: #f3d352;
+  text-shadow: 1px 1px 0 #000;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  outline: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity 5s ease-in;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 480px) {
+  .cell {
+    height: 35px;
+    width: 35px;
+  }
+  .cell img {
+    width: 25px;
+    height: 25px;
+  }
+  .labElement {
+    height: 35px;
+    width: 35px;
+    font-size: 2em;
+  }
+
+  .labelH {
+    margin-left: 30px;
+  }
+
+  .description {
+    margin-top: 1.5em;
+    font-size: 1.3em;
+  }
+
+  .win {
+    padding: 0.5em 2em;
+    font-size: 90%;
+    left: 30px;
+    right:30px;
+  }
+}
