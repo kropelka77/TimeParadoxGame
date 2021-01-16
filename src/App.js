@@ -6,6 +6,7 @@ import "./styles/main.css";
 import Board from "./components/Board.js";
 import Header from "./components/Header.js";
 import { getGame } from "./components/Game.js";
+import { initAnalytics } from "./utils/analytics"
 
 class App extends React.Component {
   constructor() {
@@ -21,6 +22,10 @@ class App extends React.Component {
       labels: game.labels
     };
   }
+
+  componentDidMount() {
+    initAnalytics()
+ }
 
   render() {
     return (
@@ -53,7 +58,7 @@ class App extends React.Component {
 
         <footer>
           <p>&copy; 2018 Dorota Siwek</p>
-          <p>Created for the purpose of traning</p>
+          <p>Created for the purpose of training</p>
         </footer>
       </div>
     );

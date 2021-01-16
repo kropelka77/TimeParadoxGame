@@ -39,7 +39,6 @@ function Header (props) {
       <nav>
         <ul>
           <li className="nav" onClick={()=>{
-            initAnalytics()
             trackEvent({
               category: 'Nav clicked',
               action: 'Click to check',
