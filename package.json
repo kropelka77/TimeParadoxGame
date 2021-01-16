@@ -1,5 +1,5 @@
 {
-  "name": "Paradox",
+  "name": "paradox",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -9,7 +9,8 @@
     "normalize.css": "^5.0.0",
     "prop-types": "^15.5.0",
     "react": "^15.5.0",
-    "react-dom": "^15.5.0"
+    "react-dom": "^15.5.0",
+    "react-ga": "^3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
