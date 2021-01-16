@@ -11,5 +11,5 @@ body {
   color: #f3d352;
   text-shadow: 1px 1px 0 #000;
   font-family: 'Cinzel', serif;
-  background-image: url("/images/background.jpg");
+  background-image: url("./styles/background.jpg");
 }

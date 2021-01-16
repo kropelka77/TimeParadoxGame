@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/header.css';
 import PropTypes from 'prop-types';
-import { trackEvent, initAnalytics } from '../utils/analytics'
+import { trackEvent } from '../utils/analytics'
 
 function Header (props) {
   let rules, check;
