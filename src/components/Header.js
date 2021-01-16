@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/header.css';
 import PropTypes from 'prop-types';
-import { trackEvent } from '../utils/analytics'
+import { trackEvent, initAnalytics } from '../utils/analytics'
 
 function Header (props) {
   let rules, check;
@@ -39,6 +39,7 @@ function Header (props) {
       <nav>
         <ul>
           <li className="nav" onClick={()=>{
+            initAnalytics()
             trackEvent({
               category: 'Nav clicked',
               action: 'Click to check',
