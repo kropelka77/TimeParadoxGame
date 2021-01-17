@@ -6,7 +6,7 @@ import "./styles/main.css";
 import Board from "./components/Board.js";
 import Header from "./components/Header.js";
 import { getGame } from "./components/Game.js";
-import { initAnalytics } from "./utils/analytics"
+import { initAnalytics, trackPage } from "./utils/analytics"
 
 class App extends React.Component {
   constructor() {
@@ -25,6 +25,7 @@ class App extends React.Component {
 
   componentDidMount() {
     initAnalytics()
+    trackPage()
  }
 
   render() {
